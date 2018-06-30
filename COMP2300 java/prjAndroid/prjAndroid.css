@@ -1,0 +1,59 @@
+/*
+prjAndroid.css
+Dustin Frandle - dafrandle@yahoo.com
+Project:Android
+Written - 11/24/2016
+
+*/
+html{
+   background-color: #005e8c;
+}
+h1{
+   color: white;
+}
+h4{
+   color: white;
+}
+p{
+   color: white;
+}
+a:link{
+   color: #d90000
+}
+a:visited{
+   color: #ff00bf
+}
+a:hover{
+   color: #ff7d7d
+}
+a:active{
+   color: #ff7d7d
+}
+body {
+   background-color: #0030bf;
+   margin: 0px auto;
+   max-width: 800px;
+   width: auto;
+   border-style: double;
+   font-family: Arial, Helvetica, Verdana, sans-serif;
+   padding: 5px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-top: 80px;
+   height: auto;
+}
+header {
+   text-align:center;
+   border-style: outset;
+   border-color: #005e8c;
+   margin: 0px auto;
+   width: 50%;
+}
+header,h1{
+   margin: 0px auto;
+   
+}
+content,hr{
+   border: 0;
+   border-bottom: 1px dashed #ffffff;
+}

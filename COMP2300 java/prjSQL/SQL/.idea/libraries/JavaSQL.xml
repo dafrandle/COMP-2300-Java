@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JavaSQL">
+    <CLASSES>
+      <root url="file://C:/JavaSQL" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/JavaSQL" recursive="false" />
+  </library>
+</component>

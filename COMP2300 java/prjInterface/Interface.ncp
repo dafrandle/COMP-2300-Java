@@ -1,0 +1,153 @@
+<Project>
+  <Name>Interface</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Main</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Main</Name>
+        <Access>Public</Access>
+        <Location left="108" top="190" />
+        <Size width="178" height="101" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public static void main(String[] args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>OrderInterface</Name>
+        <Access>Public</Access>
+        <Location left="32" top="10" />
+        <Size width="315" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public static final double TAX = .06875</Member>
+        <Member type="Method">public void findCost(double cost, int quantity, String size)</Member>
+        <Member type="Method">public double findTax(double cost)</Member>
+        <Member type="Method">public double findTotalCost(double cost, int quantity)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>BaseFoodOrder</Name>
+        <Access>Public</Access>
+        <Location left="564" top="10" />
+        <Size width="384" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int calories = 0</Member>
+        <Member type="Field">private String size</Member>
+        <Member type="Field">private double cost = 0</Member>
+        <Member type="Field">protected int quantity = 1</Member>
+        <Member type="Constructor">public BaseFoodOrder()</Member>
+        <Member type="Constructor">public BaseFoodOrder(String size)</Member>
+        <Member type="Constructor">public BaseFoodOrder(String size, int calories)</Member>
+        <Member type="Constructor">public BaseFoodOrder(String size, double cost)</Member>
+        <Member type="Constructor">public BaseFoodOrder(String size, int calories, double cost)</Member>
+        <Member type="Method">public void findCost(double cost, int quantity, String size)</Member>
+        <Member type="Method">public double findTax(double cost)</Member>
+        <Member type="Method">public double findTotalCost(double cost, int quantity)</Member>
+        <Member type="Method">protected boolean validateSize(String size)</Member>
+        <Member type="Method">protected int findTotalCalories(int calories, int quantity)</Member>
+        <Member type="Method">private double getSizeValue(String size)</Member>
+        <Member type="Method">protected void displayOrderInfo()</Member>
+        <Member type="Method">protected void processOrder()</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SubBurgerOrder</Name>
+        <Access>Public</Access>
+        <Location left="20" top="364" />
+        <Size width="178" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public SubBurgerOrder()</Member>
+        <Member type="Constructor">public SubBurgerOrder(String size)</Member>
+        <Member type="Method">protected void displayOrderInfo()</Member>
+        <Member type="Method">protected void processOrder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SubDrinkOrder</Name>
+        <Access>Public</Access>
+        <Location left="203" top="364" />
+        <Size width="171" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public SubDrinkOrder()</Member>
+        <Member type="Constructor">public SubDrinkOrder(String size)</Member>
+        <Member type="Method">protected void displayOrderInfo()</Member>
+        <Member type="Method">protected void processOrder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SubFriesOrder</Name>
+        <Access>Public</Access>
+        <Location left="380" top="364" />
+        <Size width="169" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public SubFriesOrder()</Member>
+        <Member type="Constructor">public SubFriesOrder(String size)</Member>
+        <Member type="Method">protected void displayOrderInfo()</Member>
+        <Member type="Method">protected void processOrder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="2" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>539</X>
+          <Y>109</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>417</X>
+          <Y>109</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="2" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>375</X>
+          <Y>195</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>378</X>
+          <Y>319</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>375</X>
+          <Y>195</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>378</X>
+          <Y>319</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>375</X>
+          <Y>195</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>378</X>
+          <Y>319</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

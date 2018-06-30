@@ -1,0 +1,76 @@
+@startuml
+class legend {
+   Project Class UML diagram
+   made with Plant UML
+   by Dustin Frandle
+   (Plant UML does not have
+   markers for data type)
+   ==
+   Properties
+   - private
+   + public
+   # protected
+   --
+   Methods
+   - private( )
+   + public( )
+   # protected( )
+}  
+
+package "java.util"{
+   class Random
+}
+note left of Random : used in attack( ) and damaged( )
+
+package "main" {
+   class Character {
+      Properties
+      - String:          characterName
+      - character:     sex
+      - String:          characterClass
+      # integer:         level
+      - integer:         health
+      - integer:         maxHealth
+      ==
+      Constructors
+      + Character( )
+      + Character(String characterName)
+      + Character(char sex)
+      + Character(int level)
+      + Character(int level, int health)
+      + Character(String characterName, String characterClass)
+      + Character(String characterName, String characterClass, char sex, int level, int health)
+      ..
+      Methods
+      - return boolean:    validateClass(String characterClass)
+      - return boolean:    validateSex(char sex)
+      + return integer:      attack ( )
+      + return void:          damaged( )
+      # return boolean:    isAlive(int health)
+      ..
+      Getters
+      +return String:          getCharacterName( )
+      +return String:          getCharacterClass( )
+      +return character:   getSex( )
+      +return integer:        getLevel( )
+      +return integer:        getHealth( )
+      +return integer:        getMaxHealth( )
+      ..
+      Setters
+      +return void:    setCharacterName(String characterName)
+      +return void:    setCharacterClass(String characterClass)
+      +return void:    setSex(char sex)
+      +return void:    setLevel(int level)
+      +return void:    setHealth(int health)
+      +return void:    setMaxHealth(int maxHealth)
+   }
+   class Main {
+      Static
+      ..
+      Methods
+      + return void:   main(String[] args)
+   }
+}
+
+Character --|> Random
+@enduml

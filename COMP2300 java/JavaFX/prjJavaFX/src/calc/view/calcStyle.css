@@ -1,0 +1,77 @@
+/*
+calcStyle.css
+Project prjJavaFX
+Dustin Frandle dafrandle@yahoo.com
+Written: 12/01/2016
+*/
+*{
+   -fx-text-fill: #cee1de;
+}
+.text-field:focused{
+   -fx-background-color: #7a866e;
+   -fx-background-insets: 0, 1, 2;
+   -fx-background-radius: 3, 2, 2;
+   -fx-padding: 0.25em 0.416667em  0.333333em 0.416667em; /* 3 5 4 5 */
+   -fx-text-fill: #2c2f1e;
+   -fx-font-family:"TI-92p Mini Sans","Lucida Console","Monospace";
+   -fx-cursor: text;
+}
+.text-field{
+   -fx-background-color: #7a866e;
+   -fx-background-insets: 0, 1, 2;
+   -fx-background-radius: 3, 2, 2;
+   -fx-padding: 0.25em 0.416667em  0.333333em 0.416667em; /* 3 5 4 5 */
+   -fx-text-fill: #2c2f1e;
+   -fx-font-family:"TI-92p Mini Sans","Lucida Console","Monospace";
+   -fx-cursor: pointer;
+}
+#answer.text-field:focused{
+   -fx-background-color: #7a866e;
+   -fx-background-insets: 0, 1, 2;
+   -fx-background-radius: 3, 2, 2;
+   -fx-padding: 0.25em 0.416667em  0.333333em 0.416667em; /* 3 5 4 5 */
+   -fx-text-fill: #2c2f1e;
+   -fx-font-family:"TI-92p Mini Sans","Lucida Console","Monospace";
+   -fx-cursor: pointer;
+}
+#back{
+   -fx-background: #212a29;
+}
+#key{
+   -fx-background-color: #a1afba , #dce1e5;
+   -fx-background-insets: 2 2 -1.4 2,2;
+   -fx-text-fill: #2d3c41;
+   -fx-font-family:"Roboto","Sans-serif";
+}
+#key:hover{
+   -fx-background-color: #a1afba , #bfc8cf;
+   -fx-background-insets: 2 2 -1.4 2,2;
+}
+#key:pressed{
+   -fx-background-color: #a1afba , #bfc8cf;
+   -fx-background-insets: 4 2 1.4 2 , 4 2 -1.4 2;
+   -fx-padding: 4 0 0 0;
+}
+
+#enter{
+   -fx-background-color: #2d3959 , #4f649d;
+   -fx-background-insets: 2 2 2 -1.4,2;
+   -fx-text-fill: #eef6f9;
+   -fx-font-family:"Roboto","Sans-serif";
+}
+#enter:hover{
+   -fx-background-color: #2d3959 , #3e4e7b;
+   -fx-background-insets: 2 2 2 -1.4,2;
+}
+#enter:pressed{
+   -fx-background-color: #2d3959 , #3e4e7b;
+   -fx-background-insets: 2 4 2 1.4 , 2 4 2 -1.4;
+   -fx-padding: 0 4 0 0;
+}
+
+#read{
+   -fx-font-family:"Times New Roman","serif";
+}
+.context-menu {
+  -fx-background-color: #212a29;
+}
